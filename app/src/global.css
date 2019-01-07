@@ -1,0 +1,17 @@
+/*
+ * Global constants goes here
+ */
+
+/*
+ * Global CSS goes here, it requires to use :global before each style
+ */
+
+:global html body {
+     width: 100vw;
+     height: 100vh;
+ }
+
+:global #app {
+    padding: 5px;
+    height: 100%;
+}

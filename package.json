@@ -1,0 +1,91 @@
+{
+  "name": "testapp",
+  "productName": "Test App",
+  "version": "1.0.0",
+  "description": "Test App for serialport",
+  "main": "main_process.js",
+  "scripts": {
+    "bundle": "webpack --mode development",
+    "serve": "electron .",
+    "start": "npm-run-all --parallel bundle serve",
+    "package": "yarn build && electron-builder install-app-deps && electron-builder build --publish never",
+    "package-all": "yarn build && electron-builder build -mwl",
+    "package-linux": "yarn build && electron-builder build --linux",
+    "package-win": "yarn build && electron-builder build --win --x64",
+    "postinstall": "electron-rebuild"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.2",
+    "devtron": "^1.4.0",
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.4",
+    "electron-builder-lib": "^20.23.1",
+    "electron-builder-squirrel-windows": "^20.38.3",
+    "electron-debug": "^2.0.0",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-react-devtools": "^0.5.3",
+    "electron-rebuild": "^1.8.2",
+    "electron-reload": "^1.4.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "electron-is-dev": "^1.0.1",
+    "electron-window-state": "^5.0.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.84.0",
+    "serialport": "^7.1.1"
+  },
+  "build": {
+    "productName": "Test App",
+    "appId": "com.my.test.app",
+    "files": [
+      "node_modules/",
+      "app/",
+      "main_process.js",
+      "package.json"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        "squirrel"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Development"
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    }
+  }
+}
