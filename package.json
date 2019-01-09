@@ -8,7 +8,7 @@
     "bundle": "webpack --mode development",
     "serve": "electron .",
     "start": "npm-run-all --parallel bundle serve",
-    "package": "yarn build && electron-builder install-app-deps && electron-builder build --publish never",
+    "package": "yarn build && electron-builder build --publish never",
     "package-all": "yarn build && electron-builder build -mwl",
     "package-linux": "yarn build && electron-builder build --linux",
     "package-win": "yarn build && electron-builder build --win --x64",
@@ -44,7 +44,7 @@
     "react-dom": "^16.7.0",
     "semantic-ui-css": "^2.3.3",
     "semantic-ui-react": "^0.84.0",
-    "serialport": "^7.1.1"
+    "serialport": "^7.1.2"
   },
   "build": {
     "productName": "Test App",

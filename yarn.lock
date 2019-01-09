@@ -255,27 +255,27 @@
     exenv "^1.2.2"
     prop-types "^15.6.2"
 
-"@serialport/binding-abstract@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@serialport/binding-abstract/-/binding-abstract-2.0.3.tgz#5c0d358b0809d9890a92853b5ea8fec08867f4f7"
-  integrity sha512-nD2MTIgJAHF9fynGhQbc86gPXAV8RCZ4XCH3ppm1FzVjiqHoqLwoS6BzsFNXfCUz63MCyufKNXF1mQjAyejy0g==
-  dependencies:
-    debug "^4.1.0"
-
-"@serialport/binding-mock@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@serialport/binding-mock/-/binding-mock-2.0.3.tgz#ab9272c69a9815e4b3fa23ce355956d8d7f2fe8a"
-  integrity sha512-zCDC4DOVRyE8JMf1P8rI0LzxMEFS6CkiGfYSNWEetluMtuC0bIoRv4kFXAVTaJUGwY/UHG7nMvGZIFDZFN4bCA==
-  dependencies:
-    "@serialport/binding-abstract" "^2.0.3"
-    debug "^4.1.0"
-
-"@serialport/bindings@^2.0.4":
+"@serialport/binding-abstract@^2.0.4":
   version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@serialport/bindings/-/bindings-2.0.4.tgz#43e8c8d60e305203954f181bc0be226b42979241"
-  integrity sha512-urmHlkJKTSVj/xJvx3SpW1615NpQOEOJye+z2ZLhIvfFZT2UlPkfcqbdhyjX7ushsau6VnmZTLvGEC4ul1excA==
+  resolved "https://registry.yarnpkg.com/@serialport/binding-abstract/-/binding-abstract-2.0.4.tgz#49e1d455f6515cae9007be686a177e5c54c548fb"
+  integrity sha512-0ZcSB6Gdxal55R/5McB0O359coXrO/GrmJlZ13cwN67gLsvmhmexCsd8b+H9CQ7dAbLih4HZSbfG9v8crrB0Gg==
   dependencies:
-    "@serialport/binding-abstract" "^2.0.3"
+    debug "^4.1.0"
+
+"@serialport/binding-mock@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@serialport/binding-mock/-/binding-mock-2.0.4.tgz#a84f30bac388956154e073e49c789a2c9d46ed9c"
+  integrity sha512-7c2dzVwwQIZKk+NFqC1mG0sTAwWR/GJY/4QbTn1Au3TnXhTj8nESYW/dURwsq6dGyl8+ZIPpKlRNu5Pr2tNxAQ==
+  dependencies:
+    "@serialport/binding-abstract" "^2.0.4"
+    debug "^4.1.0"
+
+"@serialport/bindings@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@serialport/bindings/-/bindings-2.0.5.tgz#751e2cb826801bf7cd4e2ee1391bf14253538a90"
+  integrity sha512-s/H5rkbe5GA1csSKkeY4Ov0wKBSjUZTRjM14JxpuR66/zdufAfJP0jk4lwaSa2yV5+QDarMn1PrHnKSXg+hHLg==
+  dependencies:
+    "@serialport/binding-abstract" "^2.0.4"
     "@serialport/parser-readline" "^2.0.2"
     bindings "^1.3.0"
     debug "^4.1.0"
@@ -314,12 +314,12 @@
   resolved "https://registry.yarnpkg.com/@serialport/parser-regex/-/parser-regex-2.0.2.tgz#fde13ca38770ea53a77e8f0c53b2c46b2cef805a"
   integrity sha512-7qjYd7AdHUK8fJOmHpXlMRipqRCVMMyDFyf/5TQQiOt6q+BiFjLOtSpVXhakHwgnXanzDYKeRSB8zM0pZZg+LA==
 
-"@serialport/stream@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@serialport/stream/-/stream-2.0.3.tgz#a8b9988db21a0c8ce8677b5d0222f971d15acff1"
-  integrity sha512-gQXCW7sy1kIGbtv4DzHIaxJpKz3G4pA/Ff1kQ/vaHtou88yNsvkzxd4AfwL0GOWSRMNNS71gv8/WczoRgRKfsw==
+"@serialport/stream@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@serialport/stream/-/stream-2.0.4.tgz#9bc9cf9b2a8bbc3521b8f8eb74afa3c97fb09d4f"
+  integrity sha512-x1OzTGGTA/ioE/wx7sM11KVxkZr5MqZNVTQXezl6wySCl5BkQTj1nc37e99p6aRQjMxAoY8BfIDJKXWwT5LSsA==
   dependencies:
-    "@serialport/binding-mock" "^2.0.3"
+    "@serialport/binding-mock" "^2.0.4"
     debug "^4.1.0"
 
 "@types/node@^10.12.18":
@@ -4912,20 +4912,20 @@ serialize-javascript@^1.4.0:
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.6.0.tgz#b30ce5ddd6517f2c445e129ff5834a399fb5861e"
   integrity sha512-AQxrNqu4EXWt03dJdgKXI+Au9+pvEuM5+Nk5g6+TmuxMCkEL03VhZ31HM+VKeaaZbFpDHaoSruiHq4PW9AIrOQ==
 
-serialport@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/serialport/-/serialport-7.1.1.tgz#fd0360632c69273b911d2ef1cb6004b5314085c2"
-  integrity sha512-3cAiDgdy3MD1Zr3QoHdnq6qbPAYABAPo+sFOv2FzXme44Pu88Gnf4f2Z0F1qYt+sGUZYX8RcwgUUp2tDnYXHKw==
+serialport@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/serialport/-/serialport-7.1.2.tgz#82e5d57ac109fc935a1e65abbc4cd4d80811b19e"
+  integrity sha512-0mrpRbyC3cdQ5rWXawvs2XyMoZzBawnTx5oBx+9hUkU66DvUjlEGtrEdwIwoXNE+p9i2JQsZudpwkMMNbyzQYQ==
   dependencies:
-    "@serialport/binding-mock" "^2.0.3"
-    "@serialport/bindings" "^2.0.4"
+    "@serialport/binding-mock" "^2.0.4"
+    "@serialport/bindings" "^2.0.5"
     "@serialport/parser-byte-length" "^2.0.2"
     "@serialport/parser-cctalk" "^2.0.2"
     "@serialport/parser-delimiter" "^2.0.2"
     "@serialport/parser-readline" "^2.0.2"
     "@serialport/parser-ready" "^2.0.2"
     "@serialport/parser-regex" "^2.0.2"
-    "@serialport/stream" "^2.0.3"
+    "@serialport/stream" "^2.0.4"
     debug "^4.1.0"
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
